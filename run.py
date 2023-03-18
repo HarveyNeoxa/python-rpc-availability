@@ -29,7 +29,7 @@ with open(ip_list_file, "r") as f:
     ip_list = f.readlines()
 ip_list = [ip.strip() for ip in ip_list]
  
-# Loop through the IP addresses every 5 minutes
+# Loop through the IP addresses every 10 seconds.
 while True:
     for ip_address in ip_list:
         # Define the RPC endpoint URL
